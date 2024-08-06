@@ -5,5 +5,5 @@ from apps.doctors.api import views
 app_name = 'doctors'
 
 urlpatterns = [
-    path('get-ticket/', views.GetDoctorTicket.as_view(), name='get-ticket'),
+    path('create-ticket/', views.CreateDoctorTicketView.as_view(), name='create-ticket'),
 ]

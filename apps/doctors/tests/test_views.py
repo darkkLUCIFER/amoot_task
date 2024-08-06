@@ -16,7 +16,7 @@ class GetDoctorTicketAPITest(APITestCase):
             last_name='Doe',
             admission_count=10
         )
-        self.url = reverse('doctors:get-ticket')
+        self.url = reverse('doctors:create-ticket')
 
     def test_create_doctor_ticket(self):
         data = {'patient_id': 1}

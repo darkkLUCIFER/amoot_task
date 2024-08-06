@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from apps.doctors.api.serializers import GetDoctorTicketSerializer
 
 
-class GetDoctorTicket(CreateAPIView):
+class CreateDoctorTicketView(CreateAPIView):
     serializer_class = GetDoctorTicketSerializer
 
     def create(self, request, *args, **kwargs):
