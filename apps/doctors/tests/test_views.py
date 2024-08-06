@@ -11,6 +11,7 @@ class GetDoctorTicketAPITest(APITestCase):
     def setUp(self):
         self.user = User.objects.create_user(username='test_user_1', password='password')
         self.doctor = Doctor.objects.create(
+            id=1,
             user=self.user,
             first_name='John',
             last_name='Doe',
