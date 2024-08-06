@@ -17,3 +17,16 @@ class Doctor(BaseModel):
         db_table = 'doctors'
         verbose_name = 'doctor'
         verbose_name_plural = 'doctors'
+
+
+class DoctorAdmission(BaseModel):
+    doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE)
+    patient_id = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"{self.doctor} - {self.patient_id}"
+
+    class Meta:
+        db_table = 'doctor_admission'
+        verbose_name = 'doctor admission'
+        verbose_name_plural = 'doctor admissions'
