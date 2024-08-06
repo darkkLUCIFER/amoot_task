@@ -1,6 +1,6 @@
+from django.contrib.auth.models import User
 from django.db import models
 
-from apps.accounts.models import User
 from apps.utils.base_model import BaseModel
 
 
