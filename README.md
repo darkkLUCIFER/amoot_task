@@ -63,3 +63,8 @@ curl --location 'http://127.0.0.1:8000/api/v1/doctors/create-ticket/' \
     "patient_id": 105
 }'
 ```
+
+## for run tests
+```bash
+python manage.py test
+```
